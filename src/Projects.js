@@ -1,23 +1,18 @@
 import React, { Component } from 'react';
 
-
-
 class Projects extends Component {
-    render() {
+
+
+    listarProjetos({ name, id }) {
         return (
-            <section>
-                <div> 
-                    <ul>
-                        <li>
-                            <h3> Tour Manager </h3> 
-                        </li>
-                    </ul>  
-                </div>
-            </section>   
-        );
+            <li key={id}>{name} - {id}</li>
+        )
+    }
+
+    render() {
+        const { data } = this.props;
+        return <ul>{data.map(this.listarProjetos)}</ul>
     }
 }
 
 export default Projects;
-
-

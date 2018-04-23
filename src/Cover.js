@@ -4,6 +4,7 @@ import './Cover.scss';
 class Cover extends Component {
     render() {
         return (
+            
             <section>
                 <div id="intro"> 
                 <h2> Bruno A. Guazina </h2>
