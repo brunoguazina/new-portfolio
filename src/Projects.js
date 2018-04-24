@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+import Tag from './Tag';
+
+import './Projects.scss';
+
 class Projects extends Component {
 
 
-    listarProjetos({ name, id }) {
+    listarProjetos({ name, id, tags }) {
         return (
-            <li key={id}>{name} - {id}</li>
+            <li key={id}>
+                <h3>{name}</h3>
+                <Tag data={tags} />
+            </li>
         )
     }
 

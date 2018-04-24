@@ -1,26 +1,42 @@
 export default [
   {
     "id": "001",
-    "name": "Pense Grande, Comece Pequeno",
+    "name": "Tour Manager",
     "tags": {
-      "01": "Workshop",
-      "02": "MVP"
+      "primeira": "Workshop",
+      "segunda": "MVP"
     }
   },
   {
     "id": "002",
-    "name": "Tour Manager",
+    "name": "Magazine Luiza",
     "tags": {
-      "01": "Workshop",
-      "02": "MVP"
+      "primeira": "E-commerce",
+      "segunda": "Marketplace"
     }
   },
   {
     "id": "003",
-    "name": "Magazine Luiza",
+    "name": "Bruninho & Davi",
     "tags": {
-      "01": "E-commerce",
-      "02": "Marketplace"
+      "primeira": "Aplicativo",
+      "segunda": "Engajamento"
     }
-  }
+  },
+  {
+    "id": "004",
+    "name": "Convenia",
+    "tags": {
+      "primeira": "Workshop",
+      "segunda": "MVP"
+    }
+  },
+  {
+    "id": "005",
+    "name": "Pense Grande, Comece Pequeno",
+    "tags": {
+      "primeira": "Workshop",
+      "segunda": "MVP"
+    }
+  },
 ]

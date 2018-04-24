@@ -17,6 +17,7 @@ ReactDOM.render(
         <Menu />
         <Cover />
         <Projects data={projects} />
+        
     </div>,
     document.getElementById('root'));
 
