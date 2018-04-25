@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Tag from './Tag';
 
 import './Projects.scss';
