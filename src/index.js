@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Menu from './Menu';
 import Cover from './Cover';
 import Projects from './Projects';
+import Brands from './Brands';
 
 import projects from './data/projects';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Menu />
         <Cover />
         <Projects data={projects} />
+        <Brands />
         
     </div>,
     document.getElementById('root'));

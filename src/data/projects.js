@@ -3,40 +3,40 @@ export default [
     "id": "001",
     "name": "Tour Manager",
     "tags": {
-      "primeira": "Workshop",
-      "segunda": "MVP"
+      1: "Workshop",
+      2: "MVP"
     }
   },
   {
     "id": "002",
     "name": "Magazine Luiza",
     "tags": {
-      "primeira": "E-commerce",
-      "segunda": "Marketplace"
+      1: "E-commerce",
+      2: "Marketplace"
     }
   },
   {
     "id": "003",
     "name": "Bruninho & Davi",
     "tags": {
-      "primeira": "Aplicativo",
-      "segunda": "Engajamento"
+      1: "Aplicativo",
+      2: "Engajamento"
     }
   },
   {
     "id": "004",
     "name": "Convenia",
     "tags": {
-      "primeira": "Workshop",
-      "segunda": "MVP"
+      1: "Workshop",
+      2: "MVP"
     }
   },
   {
     "id": "005",
     "name": "Pense Grande, Comece Pequeno",
     "tags": {
-      "primeira": "Workshop",
-      "segunda": "MVP"
+      1: "Workshop",
+      2: "MVP"
     }
   },
 ]

@@ -7,10 +7,10 @@ class Tag extends Component {
         var tag = "";
         const { data } = this.props;
 
-        for (const prop in data) {
-            console.log(`data.${prop} = ${data[prop]}`);
+        for (const position in data) {
+            console.log(data[position]);
             
-            tag = `${data[prop]}`;
+            tag = data[position];
         }
 
         return tag;
@@ -18,8 +18,6 @@ class Tag extends Component {
 
 
     render() {
-
-        //const {data} = this.props.data;
         
         return (
             <span className="tag">{this.listarTag()}</span>
