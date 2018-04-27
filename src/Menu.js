@@ -8,6 +8,7 @@ class Menu extends Component {
                 <nav>
                     <a href="/html">Projects</a>·
                     <a href="/css">Resume</a>·
+                    <a href="/blog">Blog</a>·
                     <a href="/js">Contact</a>
                 </nav>
             </header>
