@@ -6,11 +6,13 @@ import './Projects.scss';
 class Projects extends Component {
 
 
-    listarProjetos({ name, id, tags }) {
+    listarProjetos({ name, id, src, tags }) {
         return (
             <li key={id}>
-                <h3>{name}</h3>
-                <Tag data={tags} />
+                <a href={src}>  
+                    <h3>{name}</h3>
+                    <Tag data={tags} />
+                </a>
             </li>
         )
     }

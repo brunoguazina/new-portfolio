@@ -8,14 +8,26 @@ ul {
 
     li {
         border-bottom: solid 1px #f5f5f5;
-        padding: 50px 25px;
         list-style: none;
+        
         &:hover {
             background-color: #f9f9f9;
-            cursor: pointer;
+        }
+
+        a {
+            padding: 50px 25px;
+            display: block;
+            text-decoration: none;
+            color: #404040;
+            font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+            &:hover {
+
+            }
         }
     }
 }
+
 
 h3 {
     font-family: 'Quicksand', sans-serif;
@@ -26,6 +38,7 @@ h3 {
 }
 
 .tag {
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     padding: 3px 15px;
     border: solid 1px #ccc;
