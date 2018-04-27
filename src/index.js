@@ -7,10 +7,12 @@ import Projects from './Projects';
 import Brands from './Brands';
 
 import projects from './data/projects';
+import brands from './data/brands';
 
 import './index.scss';
 
 import registerServiceWorker from './registerServiceWorker';
+
 
 
 ReactDOM.render(
@@ -18,7 +20,7 @@ ReactDOM.render(
         <Menu />
         <Cover />
         <Projects data={projects} />
-        <Brands />
+        <Brands data={brands}/>
         
     </div>,
     document.getElementById('root'));

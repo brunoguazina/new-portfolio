@@ -1,6 +1,6 @@
 export default [
   {
-    "id": "001",
+    "id": 1,
     "name": "Tour Manager",
     "src": "tour-manager",
     "tags": {
@@ -9,7 +9,7 @@ export default [
     }
   },
   {
-    "id": "002",
+    "id": 2,
     "name": "Magazine Luiza",
     "src": "magazine-luiza",
     "tags": {
@@ -18,7 +18,7 @@ export default [
     }
   },
   {
-    "id": "003",
+    "id": 3,
     "name": "Bruninho & Davi",
     "src": "bruninho-davi",
     "tags": {
@@ -27,7 +27,7 @@ export default [
     }
   },
   {
-    "id": "004",
+    "id": 4,
     "name": "Convenia",
     "src": "convenia",
     "tags": {
@@ -36,7 +36,7 @@ export default [
     }
   },
   {
-    "id": "005",
+    "id": 5,
     "name": "Pense Grande, Comece Pequeno",
     "src": "pense-grande-comece-pequeno",
     "tags": {
