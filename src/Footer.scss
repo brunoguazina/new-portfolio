@@ -37,7 +37,8 @@ footer p {
 }
 
 footer ul {
-    padding: 10px 0;
+    margin: 50px 0;
+    padding: 0;
     border: none;
 }
 
@@ -45,6 +46,13 @@ footer ul li {
     display: inline-block;
     border: none;
     
+    &:hover {
+        background: transparent;
+    }
+
+    a {
+        padding: 10px 25px;
+    }
 }
 
 
