@@ -1,0 +1,57 @@
+footer {
+    padding: 50px 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.wrap {
+    width: 100%;
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+footer h4 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 0;
+    clear: right;
+    display: inherit;
+}
+footer p {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 0;
+    
+    a {
+        color: #404040;
+        
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+footer ul {
+    padding: 10px 0;
+    border: none;
+}
+
+footer ul li {
+    display: inline-block;
+    border: none;
+    
+}
+
+
+footer p.email {
+    font-family: courier new,Courier,monospace;
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 20px;
+    line-height: 26px;
+}
