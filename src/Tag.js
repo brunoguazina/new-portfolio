@@ -2,26 +2,13 @@ import React, { Component } from 'react';
 
 class Tag extends Component {
 
-    listarTag() {
-        
-        var tag = "";
-        const { data } = this.props;
-
-        for (const position in data) {
-            console.log(data[position]);
-            
-            tag = data[position];
-        }
-
-        return tag;
+    listarProjetos(name) {
+        return <span key={name} className="tag"> {name}  </span>
     }
 
-
     render() {
-        
-        return (
-            <span className="tag">{this.listarTag()}</span>
-        );
+        const { data } = this.props;
+        return data.map(this.listarProjetos)
     }
 }
 
