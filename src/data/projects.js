@@ -3,30 +3,30 @@ export default [
     "id": 1,
     "name": "Tour Manager",
     "src": "tour-manager",
-    "tags": [ "Workshop", "MVP", "Nova Tag" ]
+    "tags": [ "Startup", "Software", "Music" ]
   },
   {
     "id": 2,
     "name": "WinPic",
     "src": "winpic",
-    "tags": [ "Workshop", "MVP", "Nova Tag" ]
+    "tags": [ "Startup", "Web Platform", "Photo Contest" ]
   },
   {
     "id": 3,
     "name": "Magazine Luiza",
     "src": "magazine-luiza",
-    "tags": [ "Workshop", "MVP", "Nova Tag" ]
+    "tags": [ "Ecommerce", "Retail", "Marketplace" ]
   },
   {
     "id": 4,
     "name": "Bruninho & Davi",
     "src": "bruninho-davi",
-    "tags": [ "Workshop", "MVP", "Nova Tag" ]
+    "tags": [ "Music", "Mobile" ]
   },
   {
     "id": 5,
     "name": "Convenia",
     "src": "convenia",
-    "tags": [ "Workshop", "MVP", "Nova Tag" ]
+    "tags": [ "Startup", "HR Management", "Software" ]
   },
 ]
