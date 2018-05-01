@@ -10,3 +10,12 @@ body {
     box-sizing: border-box;
     color: #404040;
 }
+
+::selection {
+	background: #404040;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #404040;
+    color: #ffffff; 
+}

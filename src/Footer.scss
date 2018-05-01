@@ -13,23 +13,24 @@ footer {
 }
 
 footer h4 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 32px;
     line-height: 46px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     clear: right;
     display: inherit;
 }
 footer p {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 32px;
     line-height: 46px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     
     a {
         color: #808080;
+        text-decoration: none;
         
         &:hover {
             color: #404040;
@@ -54,6 +55,7 @@ footer ul li {
     a {
         color: #808080;
         padding: 10px 15px;
+        text-decoration: none;
     }
 }
 
