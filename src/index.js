@@ -18,7 +18,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(
-    <div className="teste">
+    <div>
         <Menu />
         <Cover />
         <Projects data={projects} />
