@@ -1,9 +1,10 @@
 .brands {
     padding: 200px 10%;
+    
+    img {
+        margin: 25px 03%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+    }
 }
 
-img {
-    margin: 25px 03%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
