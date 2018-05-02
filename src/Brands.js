@@ -6,7 +6,7 @@ class Brands extends Component {
 
     listarMarcas({ id, name, src }) {
         return (
-            <img key={id} src={require(`${src}`)} alt={name} width="110" />
+            <img key={id} src={require(`${src}`)} alt={name} width="115" />
         )
     }
 
