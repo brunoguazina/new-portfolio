@@ -7,7 +7,7 @@ class Cover extends Component {
             <section>
                 <div id="intro">
                     <h2> Bruno A. Guazina </h2>
-                    <h1> UI/UX Designer currently working at Magazine Luiza</h1>
+                    <h1> User Experience Designer currently working at Magazine Luiza</h1>
                 </div>
             </section>
         );

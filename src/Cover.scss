@@ -17,13 +17,15 @@ section {
 }
 
 h1  {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
     margin: 0 auto;
-    font-size: 65px;
-    font-weight: 600;
-    text-transform: uppercase;
-    max-width: 50%;
-    line-height: 1em;
+    font-size: 56px;
+    font-weight: 700;
+
+    //text-transform: uppercase;
+    width: 69%;
+    max-width: 990px;
+    line-height: 1.2em;
 }
 
 h2 {
@@ -31,7 +33,7 @@ h2 {
     font-weight: lighter;
     
     font-size: 36px;
-    color: #404040;
+    color: #767676;
     margin: 0 0 5px 0;
     display: block;
 }
