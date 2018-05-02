@@ -26,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-arrow_down:before {
+    content: "\e901";
+  }
   .icon-medium:before {
     content: "\e900";
   }
@@ -44,4 +47,3 @@
   .icon-linkedin:before {
     content: "\eac9";
   }
-

@@ -9,6 +9,7 @@ class Cover extends Component {
                     <h2> Bruno A. Guazina </h2>
                     <h1> User Experience Designer currently working at Magazine Luiza</h1>
                 </div>
+                <span className="icon-arrow_down icon"></span>    
             </section>
         );
     }
