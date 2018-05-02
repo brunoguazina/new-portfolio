@@ -15,16 +15,15 @@ import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 
 
-
-
 ReactDOM.render(
     <div>
         <Menu />
         <Cover />
         <Projects data={projects} />
-        <Brands data={brands}/>
+        <Brands data={brands} />
         <Footer />
     </div>,
-    document.getElementById('root'));
+    document.getElementById('root')
+);
 
 registerServiceWorker();
