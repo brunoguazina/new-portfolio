@@ -7,7 +7,7 @@ class Brands extends Component {
     listarMarcas({ id, name, src }) {
         console.log(src);
         return (
-            <span> {name} </ span>
+            <span key={id}> {name} </ span>
             
             // TODO: to review the use require
             //<span key={id} src={require('./../images/brands/BebeStore.jpg')} alt={name} width="115" />
