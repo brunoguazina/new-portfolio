@@ -5,8 +5,9 @@ import './Brands.scss';
 class Brands extends Component {
 
     listarMarcas({ id, name, src }) {
+        console.log(src);
         return (
-            <img key={id} src={require(`${src}`)} alt={name} width="115" />
+            <img key={id} src={src} alt={name} width="115" />
         )
     }
 
