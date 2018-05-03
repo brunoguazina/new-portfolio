@@ -7,6 +7,7 @@ import Brands from './../components/Brands';
 import Footer from './../components/Footer';
 
 import './../components/index.scss';
+
 import brands from './../data/brands';
 import projects from './../data/projects';
 

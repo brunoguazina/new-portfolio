@@ -1,7 +1,8 @@
 .brands {
     padding: 250px 10%;
     
-    img {
+    span {
+        display: inline-table;
         margin: 25px 03%;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
