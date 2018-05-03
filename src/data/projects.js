@@ -27,6 +27,6 @@ export default [
     "id": 5,
     "name": "Convenia",
     "src": "convenia",
-    "tags": [ "Startup", "HR Management", "Software" ]
+    "tags": [ "Startup", "HR Tech", "HR Management" ]
   },
 ]
