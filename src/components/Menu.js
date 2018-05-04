@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './Menu.scss';
 
 class Menu extends Component {
-    let
+
     apresentarBotaoVoltar() {
 
         if (window.location.pathname !== "/") return <a href='/' className="prev"> <span className="icon-arrow-left"></span> Voltar</a>
@@ -12,11 +12,11 @@ class Menu extends Component {
     tratarComportamentoDoBotao() {
 
         if (window.location.pathname !== "/") return <a href='/#projects'>Projects</a>
-            else return <a href='#projects'>Projects</a>
+        else return <a href='#projects' className="projects" id="linkProjects">Projects</a>
     }
 
     render() {
-        
+
         return (
             <header>
                 <nav>
