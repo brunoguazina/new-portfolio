@@ -1,9 +1,31 @@
+@import "./../components/fonts";
+@import "./../components/mixins";
+
 .main {
 
     padding: 50px 0;
 
+    img {
+        width: 375px;
+	    margin: 20px auto;
+	    border-radius: 50%;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        @extend %transition;
+
+        &:hover {
+            -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0);
+            @extend %transition;
+        }
+    }
+
+    h1 {
+        font-weight: 400;
+    }
+
     .content {
-        max-width: 750px;
+        max-width: 850px;
         margin: 0 auto;
     }
 

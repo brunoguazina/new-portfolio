@@ -6,6 +6,7 @@ import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 
 import './about.scss';
+import thumb from './../images/bruno-guazina.jpg';
 
 class About extends Component {
 
@@ -20,6 +21,9 @@ class About extends Component {
                 <Menu />
 
                 <section className="main">
+
+                    <img src={thumb} alt="Bruno Guazina - Product Designer and UX/UI Designer" />
+
                     <h1> Hi, I'm Bruno Guazina! </h1>
                     <div className="content"> 
                         <p>
