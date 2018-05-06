@@ -6,7 +6,7 @@ class Menu extends Component {
 
     apresentarBotaoVoltar() {
 
-        if (window.location.pathname !== "/") return <a href='/' className="prev"> <span className="icon-arrow-left"></span> Voltar</a>
+        if (window.location.pathname !== "/") return <a href='/' className="prev"> <span className="icon-arrow-left"></span> Home</a>
     }
 
     tratarComportamentoDoBotao() {
@@ -22,7 +22,7 @@ class Menu extends Component {
                 <nav>
                     {this.apresentarBotaoVoltar()}
                     {this.tratarComportamentoDoBotao()}·
-                    <a href="/resume">Resume</a>·
+                    <a href="/about">About</a>·
                     <a href="/blog">Blog</a>·
                     <a href="/contact">Contact</a>
                 </nav>

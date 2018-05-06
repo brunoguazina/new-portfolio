@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Menu from './../components/Menu';
-import Footer from './../components/Footer';
 
 class ComponenteDePagina404 extends Component {
 
@@ -11,7 +10,6 @@ class ComponenteDePagina404 extends Component {
             <section>
                 <Menu />
                 <h3> 404 </h3>
-                
             </section>
         )
     }
