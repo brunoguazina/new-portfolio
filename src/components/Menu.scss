@@ -6,7 +6,7 @@ header {
 
 nav {
   text-align: right;
-  padding: 25px 55px 0 0;
+  padding: 25px 55px 0 55px;
 
   a {
     text-align: center;
@@ -15,21 +15,28 @@ nav {
     color: #404040;
     display: inline-table;
     width: 65px;
-    margin: 0 18px;
-    
-    &.prev {
-      float: left;
-      font-size: 16px;
-    }
+    margin: 0 5px;
+    padding: 5px;
 
     &:hover {
-      border-bottom: solid 1px #ccc;
+      border-bottom: solid 1px #404040;
     }
     
     &.selected {
-      border-bottom: solid 1px #ccc;
+      border-bottom: solid 1px #404040;
     }
   }
 
 }
 
+a.logoMenu {
+  float: left;
+  width: 160px;
+  font-size: 16px;
+  font-weight: 500;
+
+  &:hover {
+    border-bottom: solid 1px transparent;
+    color: #000;
+  }
+}
