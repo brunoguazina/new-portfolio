@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Helmet from 'react-helmet'
+
 import Menu from './../components/Menu';
 import Cover from './../components/Cover';
 import Projects from './../components/Projects';
@@ -18,6 +20,10 @@ class App extends Component {
 
         return (
             <div>
+                <Helmet>
+                    <title>Bruno Guazina - Product Designer and UX/UI Designer</title>
+                    <meta name="theme-color" content="#FF0000" />
+                </Helmet>
                 <Menu />
                 <Cover />
                 <Projects data={projects} />
