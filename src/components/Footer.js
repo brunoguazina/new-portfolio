@@ -10,7 +10,7 @@ class Footer extends Component {
                 <div className="wrap">
                     <h4>Like what you see?</h4>
                     <p className="footer-bold">Learn more <a href="/about">about me</a>, follow me or contact me below</p>
-                    <ul className="clear">
+                    <ul>
                         <li><a href="https://medium.com/@brunoguazina" className="icon-medium"> </a></li>
                         <li><a href="https://github.com/brunoguazina" className="icon-github"> </a></li>
                         <li><a href="https://www.linkedin.com/in/bguazina/" className="icon-linkedin"> </a></li>
