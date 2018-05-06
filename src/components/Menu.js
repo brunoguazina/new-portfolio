@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 
+import { NavLink } from 'react-router-dom'
+
 import './Menu.scss';
 
 class Menu extends Component {
 
     apresentarBotaoVoltar() {
 
-        if (window.location.pathname !== "/") return <a href='/' className="prev"> <span className="icon-arrow-left"></span> Home</a>
+        if (window.location.pathname !== "/") return <NavLink to="/" className="prev"><span className="icon-arrow-left"></span> Home</NavLink>
     }
 
     tratarComportamentoDoBotao() {
 
-        if (window.location.pathname !== "/") return <a href='/#projects'>Projects</a>
+        if (window.location.pathname !== "/") return <NavLink to="/#projects" activeClassName="selected">Projects</NavLink>
         else return <a href='#projects' className="projects" id="linkProjects">Projects</a>
     }
 
@@ -21,10 +23,16 @@ class Menu extends Component {
             <header>
                 <nav>
                     {this.apresentarBotaoVoltar()}
-                    {this.tratarComportamentoDoBotao()}·
-                    <a href="/about">About</a>·
-                    <a href="/blog">Blog</a>·
-                    <a href="/contact">Contact</a>
+                    {this.tratarComportamentoDoBotao()}
+                    <NavLink
+                        to="/about"
+                        activeClassName="selected"
+                    >About</NavLink>
+                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink
+                        to="/contact"
+                        activeClassName="selected"
+                    >Contact</NavLink>
                 </nav>
             </header>
         );
