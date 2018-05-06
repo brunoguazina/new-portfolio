@@ -32,9 +32,6 @@ class About extends Component {
                             In addition, I live to travel and photograph.
                             I like to know new places, cultures, music and those responsible for all this ... people! ;)
                         </p>
-                        <p>
-                            If you would like to hire me for a project, get in touch!
-                        </p>
                     </div>
                 </section>
 
