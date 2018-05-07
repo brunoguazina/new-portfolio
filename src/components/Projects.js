@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Tag from './Tag';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
+import Tag from './Tag';
 
 import './Projects.scss';
 
@@ -21,9 +22,9 @@ class Projects extends Component {
     render() {
         const { data } = this.props;
         return (
-            <section id="projects">
+            <ScrollableAnchor id="projects">
                 <ul>{data.map(this.listarProjetos)}</ul>
-            </section>
+            </ScrollableAnchor>
         );
     }
 }
