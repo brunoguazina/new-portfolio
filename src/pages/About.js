@@ -38,7 +38,7 @@ class About extends Component {
                             I like to know new places, cultures, music and those responsible for all this ... people! ;)
                         </p>
                     </div>
-
+                    <a href="/" className="btnResume">Get my resume</a>
                 </section>
 
                 <Footer />

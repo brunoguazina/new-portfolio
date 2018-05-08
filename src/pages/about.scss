@@ -5,9 +5,8 @@
     padding: 100px 0 250px 0;
 
     img {
-        width: 375px;
+        width: 850px;
 	    margin: 20px auto;
-	    border-radius: 50%;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
         @extend %transition;
@@ -19,10 +18,6 @@
         }
     }
 
-    h1 {
-        font-weight: 400;
-    }
-
     .content {
         max-width: 850px;
         margin: 0 auto;
@@ -30,3 +25,14 @@
 
 }
 
+.btnResume {
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: #404040;
+    padding: 15px;
+    display: block;
+    margin: 125px auto 0 auto;
+    border-width: 0px;
+}
