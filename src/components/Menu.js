@@ -18,7 +18,6 @@ class Menu extends Component {
                     {this.apresentarBotaoVoltar()}
                     <a href="/#projects">Projects</a>
                     <NavLink to="/about" activeClassName="selected">About</NavLink>
-                    <NavLink to="/blog" activeClassName="selected">Blog</NavLink>
                     <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
                 </nav>
             </header>
