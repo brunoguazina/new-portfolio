@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { NavLink } from 'react-router-dom'
 
 import './Menu.scss';
@@ -8,7 +7,7 @@ class Menu extends Component {
 
     apresentarBotaoVoltar() {
 
-        if (window.location.pathname !== "/") return <NavLink to="/" className="logoMenu">BRUNO A. GUAZINA</NavLink>
+        if (window.location.pathname !== "/") return <NavLink to="/" className="logoMenu">Bruno A. Guazina</NavLink>
     }
 
     render() {
@@ -17,9 +16,9 @@ class Menu extends Component {
             <header>
                 <nav>
                     {this.apresentarBotaoVoltar()}
-                    <NavLink to="/#projects" activeClassName="selected">Projects</NavLink>
+                    <a href="/#projects" activeClassName="selected">Projects</a>
                     <NavLink to="/about" activeClassName="selected">About</NavLink>
-                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/blog" activeClassName="selected">Blog</NavLink>
                     <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
                 </nav>
             </header>

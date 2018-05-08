@@ -32,8 +32,8 @@ nav {
 a.logoMenu {
   float: left;
   width: 160px;
-  font-size: 16px;
-  font-weight: 500;
+  //font-weight: 500;
+  text-transform: uppercase;
 
   &:hover {
     border-bottom: solid 1px transparent;
