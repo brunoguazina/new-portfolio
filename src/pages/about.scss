@@ -2,20 +2,13 @@
 @import "./../components/mixins";
 
 .main {
-    padding: 100px 0 250px 0;
+    padding: 100px 0 150px 0;
 
     img {
         width: 850px;
 	    margin: 20px auto;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
-        @extend %transition;
-
-        &:hover {
-            -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
-            filter: grayscale(0);
-            @extend %transition;
-        }
     }
 
     .content {
@@ -28,11 +21,19 @@
 .btnResume {
     width: 200px;
     text-decoration: none;
-    color: #fff;
+    color: #404040;
     letter-spacing: 2px;
-    background-color: #404040;
+    
+    border: solid 1px #404040;
+    border-radius: 5px;
     padding: 15px;
     display: block;
     margin: 125px auto 0 auto;
-    border-width: 0px;
+    @extend %transition;
+
+    &:hover {
+        background-color: #404040;
+        color: #fff;
+        @extend %transition;
+    }
 }
