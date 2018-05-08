@@ -17,30 +17,40 @@ section#cover {
     text-align: center;
 }
 
-.learnMore {
+#learnMore {
     width: 100%;
     margin-left: -50vw;
     left: 50%;
-    display: inline-block;
     position: absolute;
     bottom: 0;
+    
+    a {
+        color: #404040;
+        text-decoration: none;
 
-    span {
-        display: block;
+        span {
+            display: block;
+        }
+    
+        .txt {
+            font-size: 12px;
+            position: relative;
+            top: -5px;
+        }
+    
+        .icon {
+            position: relative;
+            bottom: 20px;
+            font-size: 26px;
+            @extend %animacao;
+        }
     }
+    
+}
 
-    .txt {
-        font-size: 12px;
-        position: relative;
-        top: -5px;
-    }
-
-    .icon {
-        position: relative;
-        bottom: 20px;
-        font-size: 26px;
-        @extend %animacao;
-    }
+.invisible {
+    opacity: 0;
+    transition: all 250ms linear;
 }
 
 %animacao {
