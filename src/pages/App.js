@@ -24,6 +24,7 @@ class App extends Component {
                     <title>Bruno Guazina - Product Designer and UX/UI Designer</title>
                     <meta name="theme-color" content="#FF0000" />
                 </Helmet>
+                
                 <Menu />
                 <Cover />
                 <Projects data={projects} />

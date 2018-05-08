@@ -5,7 +5,6 @@ import './Brands.scss';
 class Brands extends Component {
 
     listarMarcas({ id, name, src }) {
-        console.log(src);
         return (
             <span key={id}> {name} </ span>
             
