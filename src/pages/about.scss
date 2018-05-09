@@ -6,9 +6,13 @@
 
     img {
         width: 850px;
-	    margin: 20px auto;
+	    //margin: 20px auto;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
+    }
+
+    h1 {
+        margin: 35px auto;
     }
 
     .content {
