@@ -5,12 +5,14 @@ import './Cover.scss';
 class Cover extends Component {
 
     tratarElemento() {
-        return (window.addEventListener("scroll", function () {
-            
-            let elemento = document.getElementById("learnMore");
+        return (
+            document.addEventListener("scroll", function () {
 
-            if (window.scrollY < "50") elemento.style.visibility = "visible"; 
-            else elemento.style.visibility = "hidden";
+                let elemento = document.getElementById("learnMore");
+                if (elemento === null ) return false;
+                
+                if (window.scrollY < "50") elemento.style.visibility = "visible";
+                else elemento.style.visibility = "hidden";
 
             })
         )
