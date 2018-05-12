@@ -1,0 +1,24 @@
+@import "mixins";
+
+#navigation {
+    
+    div {
+        display: inline-table;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 25px 45px;
+        @extend %transition;
+
+        &:hover {
+            background-color: #f9f9f9;
+            @extend %transition;
+        }
+    }
+    .left {
+        text-align: left;
+        
+    }
+    .rigth {
+        text-align: right;
+    }
+}

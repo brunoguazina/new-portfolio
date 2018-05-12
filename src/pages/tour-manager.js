@@ -11,7 +11,10 @@ import ecosystem from './../images/tour-manager/ecosystem.png';
 import wireframe from './../images/tour-manager/wireframe.png';
 import mockup from './../images/tour-manager/mockup.png';
 
+import Navigation from '../components/Navigation';
+
 import './about.scss';
+
 
 
 class TourManager extends Component {
@@ -98,6 +101,7 @@ class TourManager extends Component {
                     </div>
                 </section>
 
+                <Navigation />
                 <Footer />
 
             </div>
