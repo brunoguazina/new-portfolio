@@ -4,11 +4,15 @@
 .main {
     padding: 100px 0 150px 0;
 
-    img {
-        width: 850px;
+    img.coverAbout {
+        max-width: 850px;
 	    //margin: 20px auto;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
+    }
+
+    img {
+        max-width: 850px;
     }
 
     h1 {

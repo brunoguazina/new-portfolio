@@ -22,7 +22,7 @@ class About extends Component {
 
                 <section className="main">
 
-                    <img src={thumb} alt="Bruno Guazina - Product Designer and UX/UI Designer" />
+                    <img className="coverAbout" src={thumb} alt="Bruno Guazina - Product Designer and UX/UI Designer" />
 
                     <h1> Hi, I'm Bruno Guazina! </h1>
 
