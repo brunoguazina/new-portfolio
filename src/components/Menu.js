@@ -9,14 +9,18 @@ class Menu extends Component {
 
         if (window.location.pathname !== "/") return <NavLink to="/" className="logoMenu">Bruno A. Guazina</NavLink>
     }
+    apresentarProjects() {
 
+        if (window.location.pathname !== "/") return <NavLink to="/#projects">Projects</NavLink>
+            else return <a href="/#projects"> Projects </a>
+    }
     render() {
 
         return (
             <header>
                 <nav>
                     {this.apresentarBotaoVoltar()}
-                    <a href="/#projects">Projects</a>
+                    {this.apresentarProjects()}
                     <NavLink to="/about" activeClassName="selected">About</NavLink>
                     <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
                 </nav>
