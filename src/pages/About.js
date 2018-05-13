@@ -29,8 +29,10 @@ class About extends Component {
                     <div className="content"> 
                         <p>
                             I’m Product Designer and UX/UI Designer from Brazil currently working at Magazine Luiza.
+                        </p>
+                        <p>    
                             I have more than 10 years of experience, creating digital products for digital agencies, e-commerce,
-                            software house, and helping startups turn ideas into innovative digital products.
+                            software house, and helping startups from around the world turn ideas into innovative digital products.
                         </p>
                         <p>
                             I believe that access to information and technology creates a more just and inclusive world.
