@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import Tag from './Tag';
 
@@ -8,20 +8,20 @@ import './Projects.scss';
 
 class Projects extends Component {
 
-
-    listarProjetos({ name, id, src, tags }) {
+    listarProjetos({ title, id, url, tags, index }) {
         return (
             <li key={id}>
-                <NavLink to={src}>
-                    <h3>{name}</h3>
+                <Link to={`${'project/' + url}`} >
+                    <h3>{title}</h3>
                     <Tag data={tags} />
-                </NavLink>
+                </Link>
             </li>
         )
     }
 
     render() {
         const { data } = this.props;
+        //console.log(data);
         return (
             <ScrollableAnchor id="projects">
                 <ul>{data.map(this.listarProjetos)}</ul>

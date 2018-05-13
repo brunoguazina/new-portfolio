@@ -1,32 +1,32 @@
 export default [
   {
     "id": 1,
-    "name": "Tour Manager",
-    "src": "tour-manager",
+    "title": "Tour Manager",
+    "url": "tour-manager",
     "tags": [ "Startup", "Software", "Music" ]
   },
   {
     "id": 2,
-    "name": "WinPic",
-    "src": "winpic",
+    "title": "WinPic",
+    "url": "winpic",
     "tags": [ "Startup", "Web Platform", "Photo Contest" ]
   },
   {
     "id": 3,
-    "name": "Magazine Luiza",
-    "src": "magazine-luiza",
+    "title": "Magazine Luiza",
+    "url": "magazine-luiza",
     "tags": [ "Ecommerce", "Retail", "Marketplace" ]
   },
   {
     "id": 4,
-    "name": "Bruninho & Davi",
-    "src": "bruninho-davi",
+    "title": "Bruninho & Davi",
+    "url": "bruninho-davi",
     "tags": [ "Music", "Mobile" ]
   },
   {
     "id": 5,
-    "name": "Convenia",
-    "src": "convenia",
+    "title": "Convenia",
+    "url": "convenia",
     "tags": [ "Startup", "HR Tech", "HR Management" ]
   },
 ]
