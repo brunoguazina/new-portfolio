@@ -21,7 +21,7 @@ class Projects extends Component {
 
     render() {
         const { data } = this.props;
-        //console.log(data);
+        
         return (
             <ScrollableAnchor id="projects">
                 <ul>{data.map(this.listarProjetos)}</ul>

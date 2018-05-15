@@ -2,8 +2,21 @@ export default [
   {
     "id": 1,
     "title": "Tour Manager",
+    "description": "plataforma de gestão de carreira",
     "url": "tour-manager",
-    "tags": [ "Startup", "Software", "Music" ]
+    "tags": [ "Startup", "Software", "Music" ],
+    "content":[
+      {
+        "title":"Cenário atual",
+        "description":"",
+        "img":""
+      },
+      {
+        "title":"Cenário atual",
+        "description":"",
+        "img":""
+      }
+    ]
   },
   {
     "id": 2,

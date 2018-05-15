@@ -13,36 +13,42 @@ import './about.scss';
 
 class Project extends Component {
 
-    teste(page, projects) {
-        for (let value of projects) {
+    constructor() {
+        super();
+        this.state = {data : []};
+    }
 
-            if (value.url === page) {
-                console.log(value);                
-                return value.title;
+    componentWillMount() {
+
+        let params = this.props.match.params.Id;
+
+        for (var value of projects) {
+
+            if (value.url === params) {
+                return (
+                    this.setState({data:value})
+                )
             };
-
         }
     }
-    
+
     render() {
-        
-        const { match } = this.props;
-        var params = match.params.Id;
-        
+        console.log(this.state.data);        
         return (
             <div>
-        
+                
                 <Helmet>
-                    <title>Bruno Guazina - Product Designer and UX/UI Designer | {params}</title>
+                    <title>Bruno Guazina - Product Designer and UX/UI Designer | {this.state.data.title}</title>
                 </Helmet>
                 
                 <Menu />
 
                 <section className="main">
-                    <h1> {this.teste(params, projects)} </h1>
+                    <h1> {this.state.data.title} </h1>
+                    <span> {this.state.data.description} </span>
                 </section>
 
-                <Navigation page={params} />
+                <Navigation page={this.state} />
                 <Footer />
 
             </div>
