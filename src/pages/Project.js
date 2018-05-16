@@ -15,7 +15,7 @@ class Project extends Component {
 
     constructor() {
         super();
-        this.state = {data : []};
+        this.state = { data: []};
     }
 
     componentWillMount() {
@@ -26,29 +26,43 @@ class Project extends Component {
 
             if (value.url === params) {
                 return (
-                    this.setState({data:value})
+                    this.setState({ data: value })
                 )
             };
         }
     }
 
+    listarProjetos(content, index) {
+        return (
+            <div key={index} className="content">
+                <h3>{content.title}</h3>
+                <p>{content.description}</p>
+                <img src={content.img} alt={content.title} />
+            </div>
+        )
+    }
+
     render() {
-        console.log(this.state.data);        
+        console.log(this.state.data);
         return (
             <div>
-                
+
                 <Helmet>
                     <title>Bruno Guazina - Product Designer and UX/UI Designer | {this.state.data.title}</title>
                 </Helmet>
-                
+
                 <Menu />
 
                 <section className="main">
+                
                     <h1> {this.state.data.title} </h1>
                     <span> {this.state.data.description} </span>
-                </section>
+                    
+                    {this.state.data.content.map(this.listarProjetos)}
 
-                <Navigation page={this.state} />
+                </section>
+                
+                <Navigation currentPage={this.state.data.id} data={projects} />
                 <Footer />
 
             </div>

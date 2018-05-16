@@ -13,7 +13,16 @@
             background-color: #f9f9f9;
             @extend %transition;
         }
+
+        a {
+            text-decoration: none;
+            color: #404040;
+            font-weight: 400;
+        }
     }
+
+    
+
     .left {
         text-align: left;
         
