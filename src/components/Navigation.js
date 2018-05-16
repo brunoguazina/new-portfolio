@@ -42,7 +42,6 @@ class Navigation extends Component {
         for (var value of this.state.data) {
 
             if (value.id === nextID) {
-                console.log(value.url);
                 return <a href={value.url}> {value.title} </a>
             };
         }

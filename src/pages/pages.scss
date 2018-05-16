@@ -2,37 +2,69 @@
 @import "./../components/mixins";
 
 .main {
+    width: 80%;
+    margin: 0 auto;
     padding: 100px 0 150px 0;
 
-    img.coverAbout {
-        max-width: 850px;
-	    //margin: 20px auto;
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
-    }
-
-    img {
-        max-width: 850px;
-    }
-
-    h1 {
-        margin: 35px auto;
-    }
 
     .content {
-        max-width: 850px;
-        margin: 50px auto 0 auto;
+        width: 75%;
+        padding-right: 50px;
+        display: inline-table;
+        box-sizing: border-box;
 
         h4 {
+            font-family: adobe-garamond-pro,Times,sans-serif;
             margin: 0;
-            font-family: 'Lora', serif;
+            text-align: left;
+            font-size: 32px;
         }
         p{
+            text-align: left;
+            font-weight: 400;
             font-size: 0.8em;
+            line-height: 32px;
             margin-bottom: 50px;
         }
+        img {
+            width: 100%;
+        }
+    
     }
 
+    .sideBar {
+        width: 25%;
+        display: inline-table;
+        color: #999;
+        padding-top: 60px;
+        vertical-align: top;
+        
+        h4 {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            margin: 0;
+            text-align: left;
+            font-size: 14px;    
+        }
+        p{
+            text-align: left;
+            font-weight: 400;
+            font-size: 0.65em;
+            line-height: 19px;
+            margin: 0 0 50px 0;
+        }
+    }
+}
+
+h1 {
+    margin: 0px auto 35px auto;
+}
+
+img.coverAbout {
+    max-width: 850px;
+    //margin: 20px auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .btnResume {

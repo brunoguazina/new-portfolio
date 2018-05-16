@@ -7,6 +7,7 @@ import Footer from './../components/Footer';
 import Navigation from '../components/Navigation';
 
 import projects from './../data/projects';
+import Tag from './../components/Tag';
 
 import './pages.scss';
 
@@ -34,7 +35,7 @@ class Project extends Component {
 
     listarProjetos(content, index) {
         return (
-            <div key={index} className="content">
+            <div key={index}>
                 <h4>{content.title}</h4>
                 <p>{content.description}</p>
                 <img src={content.img} alt={content.title} />
@@ -53,14 +54,30 @@ class Project extends Component {
 
                 <Menu />
 
+                <div>
+                    <h1>{this.state.data.title}</h1>
+                    <span>{this.state.data.description}</span>
+                </div>
+
                 <section className="main">
                     
-                    <header>
-                        <h1>{this.state.data.title}</h1>
-                        <span>{this.state.data.description}</span>
-                    </header>
+                    <article className="content">
+                        {this.state.data.content.map(this.listarProjetos)}
+                    </article>
 
-                    {this.state.data.content.map(this.listarProjetos)}
+                    <aside className="sideBar">
+                    <div>
+                        <h4>About</h4>
+                        <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. </p>
+                    </div>
+
+                    <div>
+                        <h4>Role</h4>
+                        <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. </p>
+                    </div>
+
+                    <Tag data={this.state.data.tags} />
+                    </aside>
 
                 </section>
                 
