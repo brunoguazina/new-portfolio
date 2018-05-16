@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation';
 
 import projects from './../data/projects';
 
-import './about.scss';
+import './pages.scss';
 
 
 class Project extends Component {
@@ -35,7 +35,7 @@ class Project extends Component {
     listarProjetos(content, index) {
         return (
             <div key={index} className="content">
-                <h3>{content.title}</h3>
+                <h4>{content.title}</h4>
                 <p>{content.description}</p>
                 <img src={content.img} alt={content.title} />
             </div>
@@ -54,10 +54,12 @@ class Project extends Component {
                 <Menu />
 
                 <section className="main">
-                
-                    <h1> {this.state.data.title} </h1>
-                    <span> {this.state.data.description} </span>
                     
+                    <header>
+                        <h1>{this.state.data.title}</h1>
+                        <span>{this.state.data.description}</span>
+                    </header>
+
                     {this.state.data.content.map(this.listarProjetos)}
 
                 </section>

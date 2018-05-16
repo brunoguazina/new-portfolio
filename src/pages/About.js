@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 
-import './about.scss';
+import './pages.scss';
 import thumb from './../images/bruno-guazina.jpg';
 
 class About extends Component {
