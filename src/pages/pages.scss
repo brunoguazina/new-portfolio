@@ -1,15 +1,19 @@
 @import "./../components/fonts";
 @import "./../components/mixins";
 
+.header {
+    margin-top: 150px;
+}
+
 .main {
     width: 80%;
     margin: 0 auto;
-    padding: 100px 0 150px 0;
+    padding: 150px 0 150px 0;
 
 
     .content {
         width: 75%;
-        padding-right: 50px;
+        padding-right: 90px;
         display: inline-table;
         box-sizing: border-box;
 
@@ -57,7 +61,7 @@
 }
 
 h1 {
-    margin: 0px auto 35px auto;
+    margin: 0px auto;
 }
 
 img.coverAbout {

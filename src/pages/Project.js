@@ -54,7 +54,7 @@ class Project extends Component {
 
                 <Menu />
 
-                <div>
+                <div className="header">
                     <h1>{this.state.data.title}</h1>
                     <span>{this.state.data.description}</span>
                 </div>
