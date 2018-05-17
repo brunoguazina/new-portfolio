@@ -6,7 +6,6 @@ import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 
 import './pages.scss';
-import thumb from './../images/bruno-guazina.jpg';
 
 class About extends Component {
 
@@ -49,24 +48,21 @@ class About extends Component {
                         <div>
                             <h4>Talk me</h4>
                             <p>
-                                +351 925 058 007 (Portugal)<br />
-                                +55 67 999 366 393 (Brasil)
+                                <span className="icon-mobile"></span>
+                                +55 67 999 366 393 (Brazil)<br />
+                                <span className="icon-mobile"></span>
+                                +351 925 058 007 (Portugal)
                                 <br /><br />
+                                <span className="icon-mail"></span>
                                 bruno@guazina.com<br />
+                                <span className="icon-bubbles"></span>
                                 bruno_guazina (Skype ID)
-                            </p>
-                        </div>
-                        <div>
-                            <h4>Talk me</h4>
-                            <p>
-                                Portuguese (native)<br />
-                                Spanish<br />
-                                English<br />
                             </p>
                         </div>
                         <div>
                             <h4>Resume</h4>
                             <p>
+                                <span className="icon-file-text"></span>
                                 <a href="/" >Get my cv</a>
                             </p>
                         </div>
