@@ -55,6 +55,10 @@ footer ul li {
         color: #808080;
         padding: 10px 15px;
         text-decoration: none;
+
+        &:hover {
+            color: #404040;
+        }
     }
 }
 
