@@ -22,7 +22,6 @@ class Menu extends Component {
                     {this.apresentarBotaoVoltar()}
                     {this.apresentarProjects()}
                     <NavLink to="/about" activeClassName="selected">About</NavLink>
-                    <NavLink to="/contact" activeClassName="selected">Contact</NavLink>
                 </nav>
             </header>
         );
