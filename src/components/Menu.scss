@@ -17,6 +17,7 @@ nav {
     width: 65px;
     margin: 0 5px;
     padding: 5px;
+    border-bottom: solid 1px transparent;
 
     &:hover {
       border-bottom: solid 1px #404040;
@@ -34,7 +35,8 @@ a.logoMenu {
   width: 160px;
   //font-weight: 500;
   text-transform: uppercase;
-
+  background: #fff;
+  
   &:hover {
     border-bottom: solid 1px transparent;
     color: #000;
