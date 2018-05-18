@@ -11,7 +11,16 @@ import Tag from './../components/Tag';
 
 import './pages.scss';
 
-
+class ScrollToTopOnMount extends Component {
+    componentDidMount() {
+      window.scrollTo(0, 0)
+    }
+  
+    render() {
+      return null
+    }
+  }
+  
 class Project extends Component {
 
     constructor() {
@@ -20,7 +29,6 @@ class Project extends Component {
     }
 
     componentWillMount() {
-
         let params = this.props.match.params.Id;
 
         for (var value of projects) {
@@ -47,7 +55,7 @@ class Project extends Component {
         console.log(this.state.data);
         return (
             <div>
-
+                < ScrollToTopOnMount />
                 <Helmet>
                     <title>Bruno Guazina - Product Designer and UX/UI Designer | {this.state.data.title}</title>
                 </Helmet>
