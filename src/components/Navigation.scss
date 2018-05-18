@@ -19,15 +19,24 @@
             color: #404040;
             font-weight: 400;
         }
+
     }
 
     
 
     .left {
         text-align: left;
+        span {
+            margin-right: 10px; 
+            vertical-align: middle;
+        }
         
     }
     .rigth {
         text-align: right;
+        span {
+            margin-left: 10px; 
+            vertical-align: middle;
+        }
     }
 }

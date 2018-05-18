@@ -42,7 +42,7 @@ class Navigation extends Component {
         for (var value of this.state.data) {
 
             if (value.id === nextID) {
-                return <a href={value.url}> {value.title} </a>
+                return <a href={value.url}> {value.title}</a> 
             };
         }
     }
@@ -52,10 +52,12 @@ class Navigation extends Component {
         return (
             <section id="navigation">
                 <div className="left">
+                    <span className="icon-arrow-left"></span>
                     {this.prev()}
                 </div>
                 <div className="rigth"> 
                     {this.next()}
+                    <span className="icon-arrow-right2"></span>
                 </div>
             </section>
         )

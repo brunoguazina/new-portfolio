@@ -7,9 +7,24 @@ body {
     margin: 0;
     text-align: center;
     width: 100%;
-    background: #FFFFFF;
     box-sizing: border-box;
     color: #404040;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+        background: url(../images/background.jpg) no-repeat;
+        background-position: -10% 0;
+        background-size: 800px;        
+
+        opacity: .12;
+        content: "";
+        z-index: -1;
+    }
 }
 
 ::selection {

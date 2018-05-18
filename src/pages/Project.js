@@ -36,7 +36,7 @@ class Project extends Component {
     listarProjetos(content, index) {
         return (
             <div key={index}>
-                <h4>{content.title}</h4>
+                <h4><span> {content.title} </span></h4>
                 <p>{content.description}</p>
                 <img src={content.img} alt={content.title} />
             </div>

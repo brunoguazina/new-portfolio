@@ -23,7 +23,7 @@ class About extends Component {
 
                     <article className="content">
                         <div>
-                            <h4>Hi There!</h4>
+                            <h4><span>hey there!</span></h4>
                             <p>
                                 I’m Bruno Guazina a Product Designer and UX/UI Designer from Brazil currently working at Magazine Luiza.
                             </p>
