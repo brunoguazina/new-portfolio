@@ -23,7 +23,7 @@ class About extends Component {
 
                     <article className="content">
                         <div>
-                            <h4><span>hey there!</span></h4>
+                            <h4><span>Hey there!</span></h4>
                             <p>
                                 I’m Bruno Guazina a Product Designer and UX/UI Designer from Brazil currently working at Magazine Luiza.
                             </p>
@@ -46,7 +46,7 @@ class About extends Component {
 
                     <aside className="sideBar">
                         <div>
-                            <h4>Talk me</h4>
+                            <h4>Get in touch</h4>
                             <p>
                                 <span className="icon-mobile"></span>
                                 +55 67 999 366 393 (Brazil)<br />
