@@ -15,7 +15,6 @@ class ScrollToTopOnMount extends Component {
     componentDidMount() {
       window.scrollTo(0, 0)
     }
-    
     render() {
       return null
     }
@@ -30,7 +29,6 @@ class Project extends Component {
 
     componentWillMount() {
         let params = this.props.match.params.Id;
-
         for (var value of projects) {
 
             if (value.url === params) {
@@ -41,7 +39,7 @@ class Project extends Component {
         }
     }
 
-    listarProjetos(content, index) {
+    listarProjeto(content, index) {
         return (
             <div key={index}>
                 <h4><span> {content.title} </span></h4>
@@ -51,8 +49,17 @@ class Project extends Component {
         )
     }
 
+    listarDescription(data, index) {
+        return (
+            <div key={index}>
+                <h4><span>{data.title}</span></h4>
+                <p>{data.content}</p>
+            </div>
+        )
+    }
+
     render() {
-        console.log(this.state.data);
+        console.log(this.state.data.description.tags);
         return (
             <div>
                 < ScrollToTopOnMount />
@@ -64,27 +71,18 @@ class Project extends Component {
 
                 <div className="header">
                     <h1>{this.state.data.title}</h1>
-                    <span>{this.state.data.description}</span>
+                    <span>{this.state.data.subtitle}</span>
                 </div>
 
                 <section className="main">
                     
                     <article className="content">
-                        {this.state.data.content.map(this.listarProjetos)}
+                        {this.state.data.content.map(this.listarProjeto)}
                     </article>
 
                     <aside className="sideBar">
-                    <div>
-                        <h4>About</h4>
-                        <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. </p>
-                    </div>
-
-                    <div>
-                        <h4>Role</h4>
-                        <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Donec sollicitudin molestie malesuada. </p>
-                    </div>
-
-                    <Tag data={this.state.data.tags} />
+                        {this.state.data.description.map(this.listarDescription)}
+                        <Tag data={this.state.data.tags} />
                     </aside>
 
                 </section>

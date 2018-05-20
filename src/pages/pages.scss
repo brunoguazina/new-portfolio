@@ -20,12 +20,12 @@
             margin-bottom: 55px; 
 
             h4 {
-                font-family: adobe-garamond-pro,Times,sans-serif;
+                font-family: adobe-garamond-pro, Times, sans-serif;
                 margin: 0;
                 text-align: left;
                 font-size: 32px;
                 font-weight: 300;
-                
+
                 span{
                     background: #404040;
                     color: #fff;
@@ -60,10 +60,11 @@
         
         h4 {
             font-family: 'Quicksand', sans-serif;
-            font-weight: 600;
-            margin: 0 0 5px 0;
-            text-align: left;
             font-size: 14px;    
+            font-weight: 600;
+            text-align: left;
+            text-transform: capitalize;
+            margin: 0 0 5px 0;
         }
         p{
             text-align: left;
