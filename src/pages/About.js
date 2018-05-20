@@ -68,8 +68,6 @@ class About extends Component {
                         </div>
                     </aside>
 
-                    
-
                 </section>
 
                 <Footer />

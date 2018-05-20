@@ -15,12 +15,12 @@ class ScrollToTopOnMount extends Component {
     componentDidMount() {
       window.scrollTo(0, 0)
     }
-  
+    
     render() {
       return null
     }
   }
-  
+
 class Project extends Component {
 
     constructor() {
