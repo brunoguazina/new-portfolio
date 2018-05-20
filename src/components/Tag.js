@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 class Tag extends Component {
 
-    listarProjetos(name) {
-        return <span key={name} className="tag"> {name}  </span>
+    listarProjetos(name, index) {
+        return <span key={index} className="tag"> {name}  </span>
     }
 
     render() {
