@@ -3,40 +3,45 @@
 #navigation {
     
     div {
-        display: inline-table;
         width: 50%;
         box-sizing: border-box;
         padding: 25px 45px;
-        @extend %transition;
-
-        &:hover {
-            background-color: #f9f9f9;
-            @extend %transition;
-        }
 
         a {
             text-decoration: none;
             color: #404040;
             font-weight: 400;
+            display: block;
         }
 
     }
 
-    
 
-    .left {
+    .nav-previous {
         text-align: left;
+        display: inline-table;
         span {
-            margin-right: 10px; 
+            margin-right: 5px; 
             vertical-align: middle;
         }
         
     }
-    .rigth {
+    .nav-next {
         text-align: right;
+        display: inline-table;
         span {
-            margin-left: 10px; 
+            margin-left: 5px; 
             vertical-align: middle;
         }
     }
+}
+
+.post-title {
+    display: block;
+    font-family: adobe-garamond-pro, Times, sans-serif;
+    font-size: 30px;
+}
+.meta-nav {
+    font-size: 12px;
+    color: #808080;
 }

@@ -25,7 +25,12 @@ class Navigation extends Component {
 
             if (value.id === prevID) {
                 console.log(value.url);
-                return <a href={value.url}> {value.title} </a>
+                return (
+                    <a href={value.url} >
+                        <span className="post-title">{value.title}</span>
+                        <span className="meta-nav"><span className="icon-arrow-left"></span>Previous project</span>
+                    </a>
+                )
             };
         }
     }
@@ -42,7 +47,12 @@ class Navigation extends Component {
         for (var value of this.state.data) {
 
             if (value.id === nextID) {
-                return <a href={value.url}> {value.title}</a> 
+                return  (
+                    <a href={value.url} >
+						<span className="post-title">{value.title}</span>
+                        <span className="meta-nav">Next project<span className="icon-arrow-right2"></span> </span>
+				    </a>
+                )
             };
         }
     }
@@ -51,14 +61,15 @@ class Navigation extends Component {
     render() {
         return (
             <section id="navigation">
-                <div className="left">
-                    <span className="icon-arrow-left"></span>
-                    {this.prev()}
-                </div>
-                <div className="rigth"> 
-                    {this.next()}
-                    <span className="icon-arrow-right2"></span>
-                </div>
+                
+            <div className="nav-previous">
+                {this.prev()}
+            </div>
+            
+            <div className="nav-next">
+                {this.next()}
+			</div>
+                
             </section>
         )
     }
