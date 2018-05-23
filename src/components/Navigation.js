@@ -4,7 +4,7 @@ import './Navigation.scss';
 
 
 class Navigation extends Component {
-
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -20,11 +20,10 @@ class Navigation extends Component {
         if (this.state.currentPage <= 1) {
             prevID = sizeArray;
         }
-
+        
         for (var value of this.state.data) {
 
             if (value.id === prevID) {
-                console.log(value.url);
                 return (
                     <a href={value.url} >
                         <span className="post-title">{value.title}</span>
