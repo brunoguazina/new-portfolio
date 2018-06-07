@@ -12,6 +12,7 @@ import Tag from './../components/Tag';
 import './pages.scss';
 
 class ScrollToTopOnMount extends Component {
+    
     componentDidMount() {
       window.scrollTo(0, 0)
     }
@@ -29,6 +30,7 @@ class Project extends Component {
 
     componentWillMount() {
         let params = this.props.match.params.Id;
+        
         for (var value of projects) {
 
             if (value.url === params) {
@@ -59,7 +61,6 @@ class Project extends Component {
     }
 
     render() {
-        console.log(this.state.data.description.tags);
         return (
             <div>
                 < ScrollToTopOnMount />

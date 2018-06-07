@@ -11,13 +11,41 @@ import Footer from './../components/Footer';
 import './../components/index.scss';
 
 import brands from './../data/brands';
-import projects from './../data/projects';
 
+const Api = {
+    get: (url, callback) => {
+        fetch(url)
+        .then((result) => {
+            return result.json().then((response) => {
+                callback(response);
+            });
+        },(error) => {
+            console.log(error);
+            return callback(null);
+        });
+    }
+};
 
 class App extends Component {
 
-    render() {
+    constructor() {
+        super()
+        this.state = {
+            data: []
+        }
+    }
 
+    componentDidMount() {
+        Api.get('http://localhost:3000/projects', (data) => {
+            this.setState({
+                data: data || []
+            });
+        });
+    }
+
+    render() {
+        const { data } = this.state;
+        console.log(data);
         return (
             <div>
                 <Helmet>
@@ -27,7 +55,7 @@ class App extends Component {
                 
                 <Menu />
                 <Cover />
-                <Projects data={projects} />
+                <Projects data={this.state.data} />
                 <Brands data={brands} />
                 <Footer />
             </div>

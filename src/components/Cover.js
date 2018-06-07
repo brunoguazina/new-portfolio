@@ -19,7 +19,7 @@ class Cover extends Component {
     }
 
     render() {
-
+        
         return (
             <section id="cover">
 
