@@ -12,7 +12,7 @@ class Projects extends Component {
         
         return (
             <li key={id}>
-                <Link to={`${'project/' + url}`} >
+                <Link to={`project/${url}`} >
                     <h3>{title}</h3>
                     <Tag data={tags} />
                 </Link>
@@ -22,6 +22,7 @@ class Projects extends Component {
 
     render() {
         const { data } = this.props;
+        console.log(data);
         
         return (
             <ScrollableAnchor id="projects">
