@@ -11,20 +11,8 @@ import Footer from './../components/Footer';
 import './../components/index.scss';
 
 import brands from './../data/brands';
+import Api from './../service/Service';
 
-const Api = {
-    get: (url, callback) => {
-        fetch(url)
-        .then((result) => {
-            return result.json().then((response) => {
-                callback(response);
-            });
-        },(error) => {
-            console.log(error);
-            return callback(null);
-        });
-    }
-};
 
 class App extends Component {
 
@@ -36,7 +24,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-        Api.get('http://localhost:3000/projects', (data) => {
+        let URL = 'http://localhost:3000/projects';
+        
+        Api.get(URL, (data) => {
             this.setState({
                 data: data || []
             });
@@ -45,7 +35,6 @@ class App extends Component {
 
     render() {
         const { data } = this.state;
-        console.log(data);
         return (
             <div>
                 <Helmet>
@@ -55,7 +44,7 @@ class App extends Component {
                 
                 <Menu />
                 <Cover />
-                <Projects data={this.state.data} />
+                <Projects data={data} />
                 <Brands data={brands} />
                 <Footer />
             </div>
