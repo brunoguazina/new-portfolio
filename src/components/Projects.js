@@ -9,7 +9,6 @@ import './Projects.scss';
 class Projects extends Component {
 
     listarProjetos({ title, id, url, tags }) {
-        
         return (
             <li key={id}>
                 <Link to={`project/${url}`} >

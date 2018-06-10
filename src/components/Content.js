@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 
-
 class Content extends Component {
 
-    listar({ description, img, title }) {
-        return (
-            <div key={title}>
-                <h4>
-                    <span> {title} </span>
-                </h4>
-                <p>{description}</p>
-                <img src={img} alt={title} />
-            </div>
-        )
+    listarContent(value) {
+        if (value.length !== 0) {
+            const content = value.content.map((content, index) =>
+                <div key={index}>
+                    <h4><span> {content.title} </span></h4>
+                    <p>{content.description}</p>
+                    <img src={content.img} alt={content.title} />
+                </div>
+            )
+            return content;
+        };
     }
 
     render() {
 
         const { data } = this.props;
-        console.log(data);
 
         return (
             <article className="content">
-                {data.map(this.listar)}
+                {this.listarContent(data)}
             </article>
-        );
+        )
     }
+
 }
 
 export default Content;

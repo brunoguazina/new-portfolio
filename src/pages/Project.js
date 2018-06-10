@@ -5,95 +5,86 @@ import Helmet from 'react-helmet'
 import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 import Navigation from '../components/Navigation';
+import Content from '../components/Content';
+import Sidebar from '../components/Sidebar';
 
-import projects from './../data/projects';
-import Tag from './../components/Tag';
+import Api from './../service/Service';
 
 import './pages.scss';
 
 class ScrollToTopOnMount extends Component {
-    
     componentDidMount() {
       window.scrollTo(0, 0)
     }
     render() {
       return null
     }
-  }
+}
 
 class Project extends Component {
 
-    constructor() {
-        super();
-        this.state = { data: []};
-    }
-
-    componentWillMount() {
-        let params = this.props.match.params.Id;
-        
-        for (var value of projects) {
-
-            if (value.url === params) {
-                return (
-                    this.setState({ data: value })
-                )
-            };
+    constructor(props) {
+        super(props)
+        this.state = {
+            data: [],
         }
     }
 
-    listarProjeto(content, index) {
-        return (
-            <div key={index}>
-                <h4><span> {content.title} </span></h4>
-                <p>{content.description}</p>
-                <img src={content.img} alt={content.title} />
-            </div>
-        )
+    componentWillMount() {
+        let id = this.props.match.params.Id;
+        let url = `http://localhost:3001/project/${id}`;
+
+        Api.get(url, (data) => {
+            this.setState({
+                data: data
+            });
+        });
     }
 
-    listarDescription(data, index) {
-        return (
-            <div key={index}>
-                <h4><span>{data.title}</span></h4>
-                <p>{data.content}</p>
-            </div>
-        )
+    teste(value) {
+        if (value.length !== 0) {
+            return value.id;
+        };
+    }
+
+    teste2(value) {
+        if (value.length !== 0) {
+            return value;
+        };
     }
 
     render() {
+        
+        const { data } = this.state;
+        
         return (
             <div>
-                < ScrollToTopOnMount />
+                <ScrollToTopOnMount />
+                
                 <Helmet>
-                    <title>Bruno Guazina - Product Designer and UX/UI Designer | {this.state.data.title}</title>
+                    <title>Bruno Guazina - Product Designer and UX/UI Designer</title>
                 </Helmet>
 
                 <Menu />
 
                 <div className="header">
-                    <h1> <span> {this.state.data.title} </span> </h1>
-                    <span>{this.state.data.subtitle}</span>
+                    <h1> <span> {data.title} </span> </h1>
+                    <span> {data.subtitle} </span>
                 </div>
 
                 <section className="main">
-                    
-                    <article className="content">
-                        {this.state.data.content.map(this.listarProjeto)}
-                    </article>
-
-                    <aside className="sideBar">
-                        {this.state.data.description.map(this.listarDescription)}
-                        <Tag data={this.state.data.tags} />
-                    </aside>
-
+                    <Content data={data} />
+                    <Sidebar data={data} />
                 </section>
+
+                <Navigation currentPage={this.teste(data)} data={this.teste2(data)} />
                 
-                <Navigation currentPage={this.state.data.id} data={projects} />
                 <Footer />
 
             </div>
         )
     }
 }
+
 
 export default Project;

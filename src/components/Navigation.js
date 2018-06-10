@@ -8,7 +8,7 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: this.props.data,
+            data: props.data,
             currentPage: props.currentPage,
         };
     }
@@ -62,11 +62,11 @@ class Navigation extends Component {
             <section id="navigation">
                 
             <div className="nav-previous">
-                {this.prev()}
+                prev
             </div>
             
             <div className="nav-next">
-                {this.next()}
+                next
 			</div>
                 
             </section>
