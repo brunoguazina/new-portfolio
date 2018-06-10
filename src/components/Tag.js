@@ -8,7 +8,6 @@ class Tag extends Component {
 
     render() {
         const { data } = this.props;
-        
         return data.map(this.listar)
     }
 }

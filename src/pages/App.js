@@ -16,15 +16,15 @@ import Api from './../service/Service';
 
 class App extends Component {
 
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             data: []
         }
     }
 
-    componentDidMount() {
-        let URL = 'http://localhost:3000/projects';
+    componentWillMount() {
+        let URL = 'http://localhost:3001/projects';
         
         Api.get(URL, (data) => {
             this.setState({
@@ -34,7 +34,9 @@ class App extends Component {
     }
 
     render() {
+        
         const { data } = this.state;
+
         return (
             <div>
                 <Helmet>
