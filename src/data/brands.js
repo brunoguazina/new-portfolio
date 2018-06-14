@@ -11,42 +11,32 @@ export default [
     },
     {
         "id": 3,
-        "name": "Bruninho & Davi",
-        "src": "./../images/brands/BruninhoEDavi.jpg",
-    },
-    {
-        "id": 4,
         "name": "Canal da Peça",
         "src": "./../images/brands/CanalDaPeca.jpg",
     },
     {
-        "id": 5,
-        "name": "Convenia",
-        "src": "./../images/brands/convenia.jpg",
-    },
-    {
-        "id": 6,
+        "id": 4,
         "name": "Digix",
         "src": "./../images/brands/Digix.jpg",
     },
     {
-        "id": 7,
+        "id": 5,
         "name": "Jads & Jadson",
         "src": "./../images/brands/JadseJadson.jpg",
     },
     {
-        "id": 8,
-        "name": "Magazine Luiza",
-        "src": "./../images/brands/MagazineLuiza.jpg",
-    },
-    {
-        "id": 9,
+        "id": 6,
         "name": "Michel Teló",
         "src": "./../images/brands/MichelTelo.jpg",
     },
     {
-        "id": 10,
+        "id": 7,
         "name": "Sanesul",
+        "src": "./../images/brands/sanesul.jpg",
+    },
+    {
+        "id": 8,
+        "name": "Soundcheck.Tech",
         "src": "./../images/brands/sanesul.jpg",
     },
 ]

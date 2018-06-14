@@ -23,9 +23,9 @@ class App extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         let URL = 'http://localhost:3001/projects';
-        
+
         Api.get(URL, (data) => {
             this.setState({
                 data: data || []
@@ -33,8 +33,9 @@ class App extends Component {
         });
     }
 
+    
+
     render() {
-        
         const { data } = this.state;
 
         return (
