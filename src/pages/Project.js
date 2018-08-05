@@ -32,7 +32,7 @@ class Project extends Component {
 
     componentWillMount() {
         let id = this.props.match.params.Id;
-        let url = `http://localhost:3001/project/${id}`;
+        let url = `http://localhost:1337/project/${id}`;
 
         Api.get(url, (data) => {
             this.setState({

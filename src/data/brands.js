@@ -1,7 +1,7 @@
 export default [
     {
         "id": 1,
-        "name": "Bebe Store",
+        "name": "Bebê Store",
         "src": "./../images/brands/BebeStore.jpg",
     },
     {

@@ -24,7 +24,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        let URL = 'http://localhost:3001/projects';
+        let URL = 'http://localhost:1337/projects';
 
         Api.get(URL, (data) => {
             this.setState({
