@@ -8,10 +8,19 @@ import './Projects.scss';
 
 class Projects extends Component {
 
-    listarProjetos({ title, id, url, tags }) {
+    listarProjetos({ status, title, id, url, tags }) {
+        
+        
+        if (status === "inactive"){
+            var urlActive = "#";
+            
+        } else {
+            var urlActive = `project/${url}`;
+        }
+        
         return (
-            <li key={id}>
-                <Link to={`project/${url}`} >
+            <li class="active" key={id}>
+                <Link to={urlActive} >
                     <h3>{title}</h3>
                     <Tag data={tags} />
                 </Link>

@@ -14,6 +14,7 @@ class Menu extends Component {
         if (window.location.pathname !== "/") return <NavLink to="/#projects">Projects</NavLink>
             else return <a href="/#projects"> Projects </a>
     }
+    
     render() {
 
         return (
