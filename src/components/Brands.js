@@ -23,8 +23,7 @@ class Brands extends Component {
         });
     }
 
-
-    listarMarcas({ id, name, src }) {
+    listarMarcas({ id, name }) {
         return (
             <span key={id}> {name} </span>
         )

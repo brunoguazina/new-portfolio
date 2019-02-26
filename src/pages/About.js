@@ -14,7 +14,7 @@ class About extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>Bruno Guazina - Product Designer and UX/UI Designer | About</title>
+                    <title>Bruno Guazina - Product Designer and UX/UI Designer</title>
                     <meta name="theme-color" content="#FF0000" />
                 </Helmet>
                 <Menu />
