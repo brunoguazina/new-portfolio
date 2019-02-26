@@ -16,7 +16,7 @@ export default [
     },
     {
         "id": 4,
-        "name": "Digix",
+        "name": "AGEHAB",
         "src": "./../images/brands/Digix.jpg",
     },
     {
@@ -38,5 +38,20 @@ export default [
         "id": 8,
         "name": "Soundcheck.Tech",
         "src": "./../images/brands/sanesul.jpg",
+    },
+    {
+        "id": 9,
+        "name": "Vivo",
+        "src": " ",
+    },
+    {
+        "id": 10,
+        "name": "Cielo",
+        "src": " ",
+    },
+    {
+        "id": 11,
+        "name": "Sed MS",
+        "src": " ",
     },
 ]

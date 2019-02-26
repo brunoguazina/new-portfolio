@@ -1,21 +1,39 @@
 import React, { Component } from 'react';
 
+import Api from './../service/Service';
+
 import './Brands.scss';
 
 class Brands extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            data: [],
+        }
+    }
+
+    componentWillMount() {
+        let url = `https://brunoguazina-api.azurewebsites.net/brands`;
+
+        Api.get(url, (data) => {
+            this.setState({
+                data: data
+            });
+        });
+    }
+
+
     listarMarcas({ id, name, src }) {
         return (
-            <span key={id}> {name} </ span>
-            
-            // TODO: to review the use require
-            //<span key={id} src={require('./../images/brands/BebeStore.jpg')} alt={name} width="115" />
-            //
+            <span key={id}> {name} </span>
         )
     }
 
     render() {
-        const { data } = this.props;
+        
+        const { data } = this.state;
+
         return <div className="brands">{data.map(this.listarMarcas)}</div>
     }
 }

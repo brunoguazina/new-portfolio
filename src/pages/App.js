@@ -24,9 +24,9 @@ class App extends Component {
     }
 
     componentDidMount() {
-        let URL = 'http://localhost:1337/projects';
+        let url = `https://brunoguazina-api.azurewebsites.net/projects`;
 
-        Api.get(URL, (data) => {
+        Api.get(url, (data) => {
             this.setState({
                 data: data || []
             });
