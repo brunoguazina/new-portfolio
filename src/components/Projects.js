@@ -10,13 +10,10 @@ class Projects extends Component {
 
     listarProjetos({ status, title, id, url, tags }) {
         
-        
-        if (status === "inactive"){
-            var urlActive = "#";
-            
-        } else {
-            var urlActive = `project/${url}`;
-        }
+        let urlActive = "";
+
+        if (status === "inactive") urlActive = "#";
+            else urlActive = `project/${url}`;
         
         return (
             <li class="active" key={id}>

@@ -10,7 +10,6 @@ import Footer from './../components/Footer';
 
 import './../components/index.scss';
 
-import brands from './../data/brands';
 import Api from './../service/Service';
 
 
@@ -48,7 +47,7 @@ class App extends Component {
                 <Menu />
                 <Cover />
                 <Projects data={data} />
-                <Brands data={brands} />
+                <Brands />
                 <Footer />
             </div>
         )

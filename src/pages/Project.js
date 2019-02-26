@@ -30,20 +30,20 @@ class Project extends Component {
         }
     }
 
-    componentWillMount() {
+    componentWillMount() {       
         let id = this.props.match.params.Id;
         let url = `https://brunoguazina-api.azurewebsites.net/project/${id}`;
-
+          
         Api.get(url, (data) => {
             this.setState({
                 data: data
-            });
+            });  
         });
     }
 
 
     render() {
-        
+         
         const { data } = this.state;
         
         return (
@@ -51,7 +51,7 @@ class Project extends Component {
                 <ScrollToTopOnMount />
                 
                 <Helmet>
-                    <title>Bruno Guazina - Product Designer and UX/UI Designer</title>
+                    <title>Bruno Guazina - </title>
                 </Helmet>
 
                 <Menu />
