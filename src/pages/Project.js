@@ -27,6 +27,7 @@ class Project extends Component {
         super(props)
         this.state = {
             data: [],
+            title: "",
         }
     }
 
@@ -36,22 +37,23 @@ class Project extends Component {
           
         Api.get(url, (data) => {
             this.setState({
-                data: data
+                data: data,
+                title: data.title,
             });  
         });
     }
 
 
     render() {
-         
-        const { data } = this.state;
+
+        const {data,title} = this.state;
         
         return (
             <div>
                 <ScrollToTopOnMount />
                 
                 <Helmet>
-                    <title>Bruno Guazina - </title>
+                    <title>Bruno Guazina - {title} </title>
                 </Helmet>
 
                 <Menu />
