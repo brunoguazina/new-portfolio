@@ -17,9 +17,12 @@ class Projects extends Component {
         
         return (
             <li class="active" key={id}>
+                
+                <h3>{title}</h3>
+                <Tag data={tags} />
+
                 <Link to={urlActive} >
-                    <h3>{title}</h3>
-                    <Tag data={tags} />
+                    Discover the project >
                 </Link>
             </li>
         )

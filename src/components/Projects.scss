@@ -8,17 +8,12 @@ ul {
     padding: 0 0;
 
     li {
+        padding: 60px 0;
         border-bottom: solid 1px #f1f1f1;
         list-style: none;
         @extend %transition;
         
-        &:hover {
-            background-color: #f9f9f9;
-            @extend %transition;
-        }
-
         a {
-            padding: 65px 25px;
             display: block;
             text-decoration: none;
             
