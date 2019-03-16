@@ -5,12 +5,35 @@ import Helmet from 'react-helmet'
 import Menu from './../components/Menu';
 import Footer from './../components/Footer';
 
+import Api from './../service/Service';
+
 import './pages.scss';
+
 
 class About extends Component {
 
+        constructor(props) {
+            super(props)
+            this.state = {
+                data: [],
+            }
+        }
+    
+        componentWillMount() {       
+            let url = `https://brunoguazina-api.azurewebsites.net/about`;
+              
+            Api.get(url, (data) => {
+                this.setState({
+                    data: data,
+                    title: data.title,
+                });  
+            });
+        }
+
     render() {
 
+        const {data} = this.state;
+        console.log(data);
         return (
             <div>
                 <Helmet>
