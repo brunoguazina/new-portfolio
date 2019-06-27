@@ -25,7 +25,7 @@ class Cover extends Component {
 
                 <div id="intro">
                     <h2> <span> Bruno A. Guazina </span></h2>
-                    <h1> <span>User Experience Designer currently working at Wunderman </span> </h1>
+                    <h1> <span>User Experience Designer currently working at Claro S.A. </span> </h1>
                 </div>
 
                 <div id="learnMore" className={this.tratarElemento()}>
