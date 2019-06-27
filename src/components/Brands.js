@@ -13,7 +13,7 @@ class Brands extends Component {
         }
     }
 
-    componentWillMount() {
+    componentDidMount() {
         let url = `https://brunoguazina-api.azurewebsites.net/brands`;
 
         Api.get(url, (data) => {
@@ -24,6 +24,7 @@ class Brands extends Component {
     }
 
     listarMarcas({ id, name }) {
+        
         return (
             <span key={id}> {name} </span>
         )
@@ -32,7 +33,6 @@ class Brands extends Component {
     render() {
         
         const { data } = this.state;
-
         return <div className="brands">{data.map(this.listarMarcas)}</div>
     }
 }

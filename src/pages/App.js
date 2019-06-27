@@ -27,7 +27,7 @@ class App extends Component {
 
         Api.get(url, (data) => {
             this.setState({
-                data: data || []
+                data: data,
             });
         });
     }
@@ -35,7 +35,9 @@ class App extends Component {
     
 
     render() {
+        
         const { data } = this.state;
+        console.log(data);
 
         return (
             <div>

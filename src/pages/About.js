@@ -19,7 +19,7 @@ class About extends Component {
             }
         }
     
-        componentWillMount() {       
+        componentDidMount() {     
             let url = `https://brunoguazina-api.azurewebsites.net/about`;
               
             Api.get(url, (data) => {

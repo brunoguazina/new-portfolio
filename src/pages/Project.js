@@ -31,7 +31,7 @@ class Project extends Component {
         }
     }
 
-    componentWillMount() {       
+    componentDidMount() {     
         let id = this.props.match.params.Id;
         let url = `https://brunoguazina-api.azurewebsites.net/project/${id}`;
           
