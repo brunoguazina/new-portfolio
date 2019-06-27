@@ -26,6 +26,7 @@ class Project extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            isLoaded: false,
             data: [],
             title: "",
         }
@@ -39,6 +40,7 @@ class Project extends Component {
             this.setState({
                 data: data,
                 title: data.title,
+                isLoaded: true,
             });  
         });
     }
@@ -46,34 +48,39 @@ class Project extends Component {
 
     render() {
 
-        const {data,title} = this.state;
+        const { title, isLoaded, data } = this.state;
         
-        return (
-            <div>
-                <ScrollToTopOnMount />
-                
-                <Helmet>
-                    <title>Bruno Guazina - {title} </title>
-                </Helmet>
-
-                <Menu />
-
-                <div className="header">
-                    <h1> <span> {data.title} </span> </h1>
-                    <span> {data.subtitle} </span>
+        if (!isLoaded) {
+            return <div>Loading...</div>
+        } else {
+            return (
+                <div>
+                    <ScrollToTopOnMount />
+                    
+                    <Helmet>
+                        <title>Bruno Guazina - {title} </title>
+                    </Helmet>
+    
+                    <Menu />
+    
+                    <div className="header">
+                        <h1> <span> {data.title} </span> </h1>
+                        <span> {data.subtitle} </span>
+                    </div>
+    
+                    <section className="main">
+                        <Content data={data} />
+                        <Sidebar data={data} />
+                    </section>
+    
+                    <Navigation currentPage={"teste"} data={"teste"} />
+                    
+                    <Footer />
+    
                 </div>
-
-                <section className="main">
-                    <Content data={data} />
-                    <Sidebar data={data} />
-                </section>
-
-                <Navigation currentPage={"teste"} data={"teste"} />
-                
-                <Footer />
-
-            </div>
-        )
+            )
+        }
+        
     }
 }
 
