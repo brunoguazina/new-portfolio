@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Menu from './../components/Menu';
 import Cover from './../components/Cover';
 import Projects from './../components/Projects';
-import Brands from './../components/Brands';
 import Footer from './../components/Footer';
 
 import './../components/index.scss';
@@ -49,7 +48,7 @@ class App extends Component {
                 <Menu />
                 <Cover />
                 <Projects data={data} />
-                <Brands />
+
                 <Footer />
             </div>
         )
