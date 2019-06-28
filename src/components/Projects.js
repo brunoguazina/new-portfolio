@@ -16,12 +16,14 @@ class Projects extends Component {
             else urlActive = `project/${url}`;
         
         return (
-            <li class="active" key={id}>
+            <li className="active" key={id}>
                 
                 <h3>{title}</h3>
-                <Tag data={tags} />
+                <div class="tags">
+                    <Tag data={tags} />
+                </div>
 
-                <Link to={urlActive} >
+                <Link className="callToAction" to={urlActive} >
                     Discover the project >
                 </Link>
             </li>
