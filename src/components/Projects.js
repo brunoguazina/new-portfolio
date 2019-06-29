@@ -10,11 +10,6 @@ class Projects extends Component {
 
     listarProjetos({ status, title, id, url, tags }) {
         
-        let urlActive = "";
-
-        if (status === "inactive") urlActive = "#";
-            else urlActive = `project/${url}`;
-        
         return (
             <li className="active" key={id}>
                 
@@ -23,12 +18,13 @@ class Projects extends Component {
                     <Tag data={tags} />
                 </div>
 
-                <Link className="callToAction" to={urlActive} >
+                <Link className="callToAction" to={`${'project/' + url}`} >
                     Discover the project >
                 </Link>
             </li>
         )
     }
+    
 
     render() {
         const { data } = this.props;
