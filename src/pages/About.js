@@ -48,10 +48,9 @@ class About extends Component {
                         <div>
                             <h4><span>Hey there!</span></h4>
                             <p>
-                                I’m Bruno Guazina a Product Designer and UX/UI Designer from Brazil currently working at Magazine Luiza.
-                            </p>
-                            <p>    
-                                I have more than 10 years of experience, creating digital products for digital agencies, e-commerce,
+                                I’m Bruno Guazina a Product Designer and UX/UI Designer from Brazil currently working at Claro Brasil.
+                            
+                                I've more than 10 years of experience, creating digital products for digital agencies, e-commerce,
                                 software house, and helping startups from around the world turn ideas into innovative digital products.
                             </p>
                             <p>
