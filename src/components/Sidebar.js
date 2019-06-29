@@ -3,6 +3,25 @@ import Tag from './../components/Tag';
 
 class Sidebar extends Component {
 
+    handleScroll() {
+        let navbar = document.getElementById("sideBar");
+        let sticky = navbar.offsetTop;
+        
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
     listarDescription(value) {
         if (value.length !== 0) {
             const content = value.description.map((description, index) =>
@@ -24,9 +43,9 @@ class Sidebar extends Component {
     render() {
 
         const { data } = this.props;
-        
+
         return (
-            <aside className="sideBar">
+            <aside id="sideBar" className="sideBar">
                 {this.listarDescription(data)}
                 {this.listarTags(data)}
             </aside>
