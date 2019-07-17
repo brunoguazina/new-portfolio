@@ -22,6 +22,7 @@ class Menu extends Component {
                 <nav>
                     {this.apresentarBotaoVoltar()}
                     {this.apresentarProjects()}
+                    <a href="http://blog.brunoguazina.com" >Blog</a>
                     <NavLink to="/about" activeClassName="selected">About</NavLink>
                 </nav>
             </header>
