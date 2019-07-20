@@ -73,8 +73,7 @@ class Project extends Component {
                         <Sidebar data={data} />
                     </section>
     
-                    <Navigation currentPage={"teste"} data={"teste"} />
-                    
+                    <Navigation currentPage={this.state.data.id} />
                     <Footer />
     
                 </div>

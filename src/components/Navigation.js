@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Api from './../service/Service';
 
 import './Navigation.scss';
 
@@ -8,9 +9,19 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: props.data,
+            data: [],
             currentPage: props.currentPage,
         };
+    }
+
+    componentDidMount() {     
+        let url = `https://brunoguazina-api.azurewebsites.net/projects`;
+          
+        Api.get(url, (data) => {
+            this.setState({
+                data: data,
+            });  
+        });
     }
 
     prev() {
@@ -58,17 +69,21 @@ class Navigation extends Component {
 
 
     render() {
+        
+        const { currentPage } = this.state;
+        console.log(currentPage);
+
         return (
             <section id="navigation">
-                
-            <div className="nav-previous">
-                prev
-            </div>
-            
-            <div className="nav-next">
-                next
-			</div>
-                
+
+             <div className="nav-previous">
+                {this.prev()}	           
+            </div>	            
+
+             <div className="nav-next">
+                {this.next()}	       
+			</div>				
+
             </section>
         )
     }
