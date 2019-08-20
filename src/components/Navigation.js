@@ -15,7 +15,7 @@ class Navigation extends Component {
     }
 
     componentDidMount() {     
-        let url = `https://brunoguazina-api.azurewebsites.net/projects`;
+        let url = `http://api.brunoguazina.com/projects`;
           
         Api.get(url, (data) => {
             this.setState({

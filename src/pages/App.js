@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Api from './../service/Service';
 
 import Helmet from 'react-helmet'
 
@@ -8,9 +9,6 @@ import Projects from './../components/Projects';
 import Footer from './../components/Footer';
 
 import './../components/index.scss';
-
-import Api from './../service/Service';
-
 
 class App extends Component {
 
@@ -22,7 +20,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        let url = `https://brunoguazina-api.azurewebsites.net/projects`;
+        let url = `http://api.brunoguazina.com/projects`;
 
         Api.get(url, (data) => {
             this.setState({
@@ -30,8 +28,6 @@ class App extends Component {
             });
         });
     }
-
-    
 
     render() {
         

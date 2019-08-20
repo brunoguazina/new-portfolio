@@ -20,7 +20,7 @@ class About extends Component {
         }
     
         componentDidMount() {     
-            let url = `https://brunoguazina-api.azurewebsites.net/about`;
+            let url = `http://api.brunoguazina.com/about`;
               
             Api.get(url, (data) => {
                 this.setState({

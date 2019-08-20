@@ -34,7 +34,7 @@ class Project extends Component {
 
     componentDidMount() {     
         let id = this.props.match.params.Id;
-        let url = `https://brunoguazina-api.azurewebsites.net/project/${id}`;
+        let url = `http://api.brunoguazina.com/project/${id}`;
           
         Api.get(url, (data) => {
             this.setState({
