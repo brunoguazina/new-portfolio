@@ -12,8 +12,8 @@ import ComponenteDePagina404 from './pages/ComponenteDePagina404';
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="/" exact={true} component={App} />
-            <Route path="/about" component={About} />
+            <Route path="/" exact component={App} />
+            <Route path="/about" exact component={About} />
             <Route path="/project/:Id" component={Project} />
             <Route path='*' component={ComponenteDePagina404} />
         </Switch>
